@@ -7,64 +7,66 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EC603A4422143E6D000A306F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC603A4322143E6D000A306F /* AppDelegate.swift */; };
-		EC603A4622143E6D000A306F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC603A4522143E6D000A306F /* ViewController.swift */; };
-		EC603A4922143E6D000A306F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC603A4722143E6D000A306F /* Main.storyboard */; };
-		EC603A4B22143E6F000A306F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC603A4A22143E6F000A306F /* Assets.xcassets */; };
-		EC603A4E22143E6F000A306F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC603A4C22143E6F000A306F /* LaunchScreen.storyboard */; };
-		EC603A5922143E6F000A306F /* MyLocationsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC603A5822143E6F000A306F /* MyLocationsAppTests.swift */; };
-		EC603A6422143E70000A306F /* MyLocationsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC603A6322143E70000A306F /* MyLocationsAppUITests.swift */; };
+		EC603A7E22144877000A306F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC603A7D22144877000A306F /* AppDelegate.swift */; };
+		EC603A8022144877000A306F /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC603A7F22144877000A306F /* FirstViewController.swift */; };
+		EC603A8222144877000A306F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC603A8122144877000A306F /* SecondViewController.swift */; };
+		EC603A8522144877000A306F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC603A8322144877000A306F /* Main.storyboard */; };
+		EC603A8722144878000A306F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC603A8622144878000A306F /* Assets.xcassets */; };
+		EC603A8A22144878000A306F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC603A8822144878000A306F /* LaunchScreen.storyboard */; };
+		EC603A9522144878000A306F /* MyLocationsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC603A9422144878000A306F /* MyLocationsAppTests.swift */; };
+		EC603AA022144878000A306F /* MyLocationsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC603A9F22144878000A306F /* MyLocationsAppUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		EC603A5522143E6F000A306F /* PBXContainerItemProxy */ = {
+		EC603A9122144878000A306F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = EC603A3822143E6D000A306F /* Project object */;
+			containerPortal = EC603A7222144877000A306F /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = EC603A3F22143E6D000A306F;
+			remoteGlobalIDString = EC603A7922144877000A306F;
 			remoteInfo = MyLocationsApp;
 		};
-		EC603A6022143E70000A306F /* PBXContainerItemProxy */ = {
+		EC603A9C22144878000A306F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = EC603A3822143E6D000A306F /* Project object */;
+			containerPortal = EC603A7222144877000A306F /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = EC603A3F22143E6D000A306F;
+			remoteGlobalIDString = EC603A7922144877000A306F;
 			remoteInfo = MyLocationsApp;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EC603A4022143E6D000A306F /* MyLocationsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLocationsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC603A4322143E6D000A306F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EC603A4522143E6D000A306F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EC603A4822143E6D000A306F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		EC603A4A22143E6F000A306F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EC603A4D22143E6F000A306F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		EC603A4F22143E6F000A306F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EC603A5422143E6F000A306F /* MyLocationsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyLocationsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC603A5822143E6F000A306F /* MyLocationsAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLocationsAppTests.swift; sourceTree = "<group>"; };
-		EC603A5A22143E70000A306F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EC603A5F22143E70000A306F /* MyLocationsAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyLocationsAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC603A6322143E70000A306F /* MyLocationsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLocationsAppUITests.swift; sourceTree = "<group>"; };
-		EC603A6522143E70000A306F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC603A7A22144877000A306F /* MyLocationsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLocationsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC603A7D22144877000A306F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EC603A7F22144877000A306F /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		EC603A8122144877000A306F /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		EC603A8422144877000A306F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC603A8622144878000A306F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC603A8922144878000A306F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC603A8B22144878000A306F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC603A9022144878000A306F /* MyLocationsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyLocationsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC603A9422144878000A306F /* MyLocationsAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLocationsAppTests.swift; sourceTree = "<group>"; };
+		EC603A9622144878000A306F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC603A9B22144878000A306F /* MyLocationsAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyLocationsAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC603A9F22144878000A306F /* MyLocationsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLocationsAppUITests.swift; sourceTree = "<group>"; };
+		EC603AA122144878000A306F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		EC603A3D22143E6D000A306F /* Frameworks */ = {
+		EC603A7722144877000A306F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EC603A5122143E6F000A306F /* Frameworks */ = {
+		EC603A8D22144878000A306F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EC603A5C22143E70000A306F /* Frameworks */ = {
+		EC603A9822144878000A306F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -74,53 +76,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		EC603A3722143E6D000A306F = {
+		EC603A7122144877000A306F = {
 			isa = PBXGroup;
 			children = (
-				EC603A4222143E6D000A306F /* MyLocationsApp */,
-				EC603A5722143E6F000A306F /* MyLocationsAppTests */,
-				EC603A6222143E70000A306F /* MyLocationsAppUITests */,
-				EC603A4122143E6D000A306F /* Products */,
+				EC603A7C22144877000A306F /* MyLocationsApp */,
+				EC603A9322144878000A306F /* MyLocationsAppTests */,
+				EC603A9E22144878000A306F /* MyLocationsAppUITests */,
+				EC603A7B22144877000A306F /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		EC603A4122143E6D000A306F /* Products */ = {
+		EC603A7B22144877000A306F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EC603A4022143E6D000A306F /* MyLocationsApp.app */,
-				EC603A5422143E6F000A306F /* MyLocationsAppTests.xctest */,
-				EC603A5F22143E70000A306F /* MyLocationsAppUITests.xctest */,
+				EC603A7A22144877000A306F /* MyLocationsApp.app */,
+				EC603A9022144878000A306F /* MyLocationsAppTests.xctest */,
+				EC603A9B22144878000A306F /* MyLocationsAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EC603A4222143E6D000A306F /* MyLocationsApp */ = {
+		EC603A7C22144877000A306F /* MyLocationsApp */ = {
 			isa = PBXGroup;
 			children = (
-				EC603A4322143E6D000A306F /* AppDelegate.swift */,
-				EC603A4522143E6D000A306F /* ViewController.swift */,
-				EC603A4722143E6D000A306F /* Main.storyboard */,
-				EC603A4A22143E6F000A306F /* Assets.xcassets */,
-				EC603A4C22143E6F000A306F /* LaunchScreen.storyboard */,
-				EC603A4F22143E6F000A306F /* Info.plist */,
+				EC603A7D22144877000A306F /* AppDelegate.swift */,
+				EC603A7F22144877000A306F /* FirstViewController.swift */,
+				EC603A8122144877000A306F /* SecondViewController.swift */,
+				EC603A8322144877000A306F /* Main.storyboard */,
+				EC603A8622144878000A306F /* Assets.xcassets */,
+				EC603A8822144878000A306F /* LaunchScreen.storyboard */,
+				EC603A8B22144878000A306F /* Info.plist */,
 			);
 			path = MyLocationsApp;
 			sourceTree = "<group>";
 		};
-		EC603A5722143E6F000A306F /* MyLocationsAppTests */ = {
+		EC603A9322144878000A306F /* MyLocationsAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				EC603A5822143E6F000A306F /* MyLocationsAppTests.swift */,
-				EC603A5A22143E70000A306F /* Info.plist */,
+				EC603A9422144878000A306F /* MyLocationsAppTests.swift */,
+				EC603A9622144878000A306F /* Info.plist */,
 			);
 			path = MyLocationsAppTests;
 			sourceTree = "<group>";
 		};
-		EC603A6222143E70000A306F /* MyLocationsAppUITests */ = {
+		EC603A9E22144878000A306F /* MyLocationsAppUITests */ = {
 			isa = PBXGroup;
 			children = (
-				EC603A6322143E70000A306F /* MyLocationsAppUITests.swift */,
-				EC603A6522143E70000A306F /* Info.plist */,
+				EC603A9F22144878000A306F /* MyLocationsAppUITests.swift */,
+				EC603AA122144878000A306F /* Info.plist */,
 			);
 			path = MyLocationsAppUITests;
 			sourceTree = "<group>";
@@ -128,13 +131,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EC603A3F22143E6D000A306F /* MyLocationsApp */ = {
+		EC603A7922144877000A306F /* MyLocationsApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EC603A6822143E70000A306F /* Build configuration list for PBXNativeTarget "MyLocationsApp" */;
+			buildConfigurationList = EC603AA422144878000A306F /* Build configuration list for PBXNativeTarget "MyLocationsApp" */;
 			buildPhases = (
-				EC603A3C22143E6D000A306F /* Sources */,
-				EC603A3D22143E6D000A306F /* Frameworks */,
-				EC603A3E22143E6D000A306F /* Resources */,
+				EC603A7622144877000A306F /* Sources */,
+				EC603A7722144877000A306F /* Frameworks */,
+				EC603A7822144877000A306F /* Resources */,
 			);
 			buildRules = (
 			);
@@ -142,69 +145,69 @@
 			);
 			name = MyLocationsApp;
 			productName = MyLocationsApp;
-			productReference = EC603A4022143E6D000A306F /* MyLocationsApp.app */;
+			productReference = EC603A7A22144877000A306F /* MyLocationsApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		EC603A5322143E6F000A306F /* MyLocationsAppTests */ = {
+		EC603A8F22144878000A306F /* MyLocationsAppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EC603A6B22143E70000A306F /* Build configuration list for PBXNativeTarget "MyLocationsAppTests" */;
+			buildConfigurationList = EC603AA722144878000A306F /* Build configuration list for PBXNativeTarget "MyLocationsAppTests" */;
 			buildPhases = (
-				EC603A5022143E6F000A306F /* Sources */,
-				EC603A5122143E6F000A306F /* Frameworks */,
-				EC603A5222143E6F000A306F /* Resources */,
+				EC603A8C22144878000A306F /* Sources */,
+				EC603A8D22144878000A306F /* Frameworks */,
+				EC603A8E22144878000A306F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EC603A5622143E6F000A306F /* PBXTargetDependency */,
+				EC603A9222144878000A306F /* PBXTargetDependency */,
 			);
 			name = MyLocationsAppTests;
 			productName = MyLocationsAppTests;
-			productReference = EC603A5422143E6F000A306F /* MyLocationsAppTests.xctest */;
+			productReference = EC603A9022144878000A306F /* MyLocationsAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		EC603A5E22143E70000A306F /* MyLocationsAppUITests */ = {
+		EC603A9A22144878000A306F /* MyLocationsAppUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EC603A6E22143E70000A306F /* Build configuration list for PBXNativeTarget "MyLocationsAppUITests" */;
+			buildConfigurationList = EC603AAA22144878000A306F /* Build configuration list for PBXNativeTarget "MyLocationsAppUITests" */;
 			buildPhases = (
-				EC603A5B22143E70000A306F /* Sources */,
-				EC603A5C22143E70000A306F /* Frameworks */,
-				EC603A5D22143E70000A306F /* Resources */,
+				EC603A9722144878000A306F /* Sources */,
+				EC603A9822144878000A306F /* Frameworks */,
+				EC603A9922144878000A306F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EC603A6122143E70000A306F /* PBXTargetDependency */,
+				EC603A9D22144878000A306F /* PBXTargetDependency */,
 			);
 			name = MyLocationsAppUITests;
 			productName = MyLocationsAppUITests;
-			productReference = EC603A5F22143E70000A306F /* MyLocationsAppUITests.xctest */;
+			productReference = EC603A9B22144878000A306F /* MyLocationsAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		EC603A3822143E6D000A306F /* Project object */ = {
+		EC603A7222144877000A306F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = Trainee;
 				TargetAttributes = {
-					EC603A3F22143E6D000A306F = {
+					EC603A7922144877000A306F = {
 						CreatedOnToolsVersion = 10.1;
 					};
-					EC603A5322143E6F000A306F = {
+					EC603A8F22144878000A306F = {
 						CreatedOnToolsVersion = 10.1;
-						TestTargetID = EC603A3F22143E6D000A306F;
+						TestTargetID = EC603A7922144877000A306F;
 					};
-					EC603A5E22143E70000A306F = {
+					EC603A9A22144878000A306F = {
 						CreatedOnToolsVersion = 10.1;
-						TestTargetID = EC603A3F22143E6D000A306F;
+						TestTargetID = EC603A7922144877000A306F;
 					};
 				};
 			};
-			buildConfigurationList = EC603A3B22143E6D000A306F /* Build configuration list for PBXProject "MyLocationsApp" */;
+			buildConfigurationList = EC603A7522144877000A306F /* Build configuration list for PBXProject "MyLocationsApp" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -212,37 +215,37 @@
 				en,
 				Base,
 			);
-			mainGroup = EC603A3722143E6D000A306F;
-			productRefGroup = EC603A4122143E6D000A306F /* Products */;
+			mainGroup = EC603A7122144877000A306F;
+			productRefGroup = EC603A7B22144877000A306F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EC603A3F22143E6D000A306F /* MyLocationsApp */,
-				EC603A5322143E6F000A306F /* MyLocationsAppTests */,
-				EC603A5E22143E70000A306F /* MyLocationsAppUITests */,
+				EC603A7922144877000A306F /* MyLocationsApp */,
+				EC603A8F22144878000A306F /* MyLocationsAppTests */,
+				EC603A9A22144878000A306F /* MyLocationsAppUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		EC603A3E22143E6D000A306F /* Resources */ = {
+		EC603A7822144877000A306F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC603A4E22143E6F000A306F /* LaunchScreen.storyboard in Resources */,
-				EC603A4B22143E6F000A306F /* Assets.xcassets in Resources */,
-				EC603A4922143E6D000A306F /* Main.storyboard in Resources */,
+				EC603A8A22144878000A306F /* LaunchScreen.storyboard in Resources */,
+				EC603A8722144878000A306F /* Assets.xcassets in Resources */,
+				EC603A8522144877000A306F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EC603A5222143E6F000A306F /* Resources */ = {
+		EC603A8E22144878000A306F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EC603A5D22143E70000A306F /* Resources */ = {
+		EC603A9922144878000A306F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -252,59 +255,60 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		EC603A3C22143E6D000A306F /* Sources */ = {
+		EC603A7622144877000A306F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC603A4622143E6D000A306F /* ViewController.swift in Sources */,
-				EC603A4422143E6D000A306F /* AppDelegate.swift in Sources */,
+				EC603A8222144877000A306F /* SecondViewController.swift in Sources */,
+				EC603A7E22144877000A306F /* AppDelegate.swift in Sources */,
+				EC603A8022144877000A306F /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EC603A5022143E6F000A306F /* Sources */ = {
+		EC603A8C22144878000A306F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC603A5922143E6F000A306F /* MyLocationsAppTests.swift in Sources */,
+				EC603A9522144878000A306F /* MyLocationsAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EC603A5B22143E70000A306F /* Sources */ = {
+		EC603A9722144878000A306F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC603A6422143E70000A306F /* MyLocationsAppUITests.swift in Sources */,
+				EC603AA022144878000A306F /* MyLocationsAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		EC603A5622143E6F000A306F /* PBXTargetDependency */ = {
+		EC603A9222144878000A306F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EC603A3F22143E6D000A306F /* MyLocationsApp */;
-			targetProxy = EC603A5522143E6F000A306F /* PBXContainerItemProxy */;
+			target = EC603A7922144877000A306F /* MyLocationsApp */;
+			targetProxy = EC603A9122144878000A306F /* PBXContainerItemProxy */;
 		};
-		EC603A6122143E70000A306F /* PBXTargetDependency */ = {
+		EC603A9D22144878000A306F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EC603A3F22143E6D000A306F /* MyLocationsApp */;
-			targetProxy = EC603A6022143E70000A306F /* PBXContainerItemProxy */;
+			target = EC603A7922144877000A306F /* MyLocationsApp */;
+			targetProxy = EC603A9C22144878000A306F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EC603A4722143E6D000A306F /* Main.storyboard */ = {
+		EC603A8322144877000A306F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				EC603A4822143E6D000A306F /* Base */,
+				EC603A8422144877000A306F /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		EC603A4C22143E6F000A306F /* LaunchScreen.storyboard */ = {
+		EC603A8822144878000A306F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				EC603A4D22143E6F000A306F /* Base */,
+				EC603A8922144878000A306F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -312,7 +316,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		EC603A6622143E70000A306F /* Debug */ = {
+		EC603AA222144878000A306F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -373,7 +377,7 @@
 			};
 			name = Debug;
 		};
-		EC603A6722143E70000A306F /* Release */ = {
+		EC603AA322144878000A306F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -428,7 +432,7 @@
 			};
 			name = Release;
 		};
-		EC603A6922143E70000A306F /* Debug */ = {
+		EC603AA522144878000A306F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -445,7 +449,7 @@
 			};
 			name = Debug;
 		};
-		EC603A6A22143E70000A306F /* Release */ = {
+		EC603AA622144878000A306F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -462,7 +466,7 @@
 			};
 			name = Release;
 		};
-		EC603A6C22143E70000A306F /* Debug */ = {
+		EC603AA822144878000A306F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -482,7 +486,7 @@
 			};
 			name = Debug;
 		};
-		EC603A6D22143E70000A306F /* Release */ = {
+		EC603AA922144878000A306F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -502,7 +506,7 @@
 			};
 			name = Release;
 		};
-		EC603A6F22143E70000A306F /* Debug */ = {
+		EC603AAB22144878000A306F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -521,7 +525,7 @@
 			};
 			name = Debug;
 		};
-		EC603A7022143E70000A306F /* Release */ = {
+		EC603AAC22144878000A306F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -543,43 +547,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EC603A3B22143E6D000A306F /* Build configuration list for PBXProject "MyLocationsApp" */ = {
+		EC603A7522144877000A306F /* Build configuration list for PBXProject "MyLocationsApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EC603A6622143E70000A306F /* Debug */,
-				EC603A6722143E70000A306F /* Release */,
+				EC603AA222144878000A306F /* Debug */,
+				EC603AA322144878000A306F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EC603A6822143E70000A306F /* Build configuration list for PBXNativeTarget "MyLocationsApp" */ = {
+		EC603AA422144878000A306F /* Build configuration list for PBXNativeTarget "MyLocationsApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EC603A6922143E70000A306F /* Debug */,
-				EC603A6A22143E70000A306F /* Release */,
+				EC603AA522144878000A306F /* Debug */,
+				EC603AA622144878000A306F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EC603A6B22143E70000A306F /* Build configuration list for PBXNativeTarget "MyLocationsAppTests" */ = {
+		EC603AA722144878000A306F /* Build configuration list for PBXNativeTarget "MyLocationsAppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EC603A6C22143E70000A306F /* Debug */,
-				EC603A6D22143E70000A306F /* Release */,
+				EC603AA822144878000A306F /* Debug */,
+				EC603AA922144878000A306F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EC603A6E22143E70000A306F /* Build configuration list for PBXNativeTarget "MyLocationsAppUITests" */ = {
+		EC603AAA22144878000A306F /* Build configuration list for PBXNativeTarget "MyLocationsAppUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EC603A6F22143E70000A306F /* Debug */,
-				EC603A7022143E70000A306F /* Release */,
+				EC603AAB22144878000A306F /* Debug */,
+				EC603AAC22144878000A306F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = EC603A3822143E6D000A306F /* Project object */;
+	rootObject = EC603A7222144877000A306F /* Project object */;
 }
