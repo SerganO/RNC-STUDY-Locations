@@ -106,6 +106,8 @@ CLLocationManagerDelegate {
                             didUpdateLocations locations: [CLLocation]) {
         let newLocation = locations.last!
         print("didUpdateLocations \(newLocation)")
+        
+       
  
         if newLocation.timestamp.timeIntervalSinceNow < -5
         {
@@ -143,11 +145,11 @@ CLLocationManagerDelegate {
                 print("*** Going to geocode")
                 
                 performingReverseGeocoding = true
-                
+                print("Lilili")
                 geocoder.reverseGeocodeLocation(newLocation,
                                                 completionHandler: {
                                                     placemarks, error in
-
+                                                    print("Lololo")
                                                     self.lastGeocodingError = error
                                                     if error == nil, let p = placemarks, !p.isEmpty {
                                                         self.placemark = p.last!
@@ -157,6 +159,7 @@ CLLocationManagerDelegate {
                                                     self.performingReverseGeocoding = false
                                                     self.updateLabels()
                 })
+                print("Lalala")
             }
             } else if distance < 1 {
             let timeInterval = newLocation.timestamp.timeIntervalSince(
@@ -207,11 +210,11 @@ CLLocationManagerDelegate {
             kCLLocationAccuracyNearestTenMeters
             locationManager.startUpdatingLocation()
             updatingLocation = true
-            
             timer = Timer.scheduledTimer(timeInterval: 60, target: self,
                 selector: #selector(didTimeOut), userInfo: nil,
                 repeats: false)
         }
+        
     }
     
     func stopLocationManager()
