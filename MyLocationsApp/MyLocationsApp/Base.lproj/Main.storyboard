@@ -47,8 +47,12 @@
                                     <action selector="getLocation" destination="9pv-A4-QxB" eventType="touchUpInside" id="Shw-cG-1OL"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="(Address goes here)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BOG-Pd-i1C">
-                                <rect key="frame" x="30" y="187" width="156" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="(Address goes here)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BOG-Pd-i1C">
+                                <rect key="frame" x="30" y="187" width="175" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="bzd-fo-Hme"/>
+                                    <constraint firstAttribute="width" constant="175" id="dVJ-So-oXv"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -71,14 +75,14 @@
                             <constraint firstItem="EAQ-D1-Ks1" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="2g4-Sm-giY"/>
                             <constraint firstItem="XbI-Jq-ckB" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="30" id="B1z-5q-le6"/>
                             <constraint firstItem="uFa-zX-3Dg" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="60" id="HZl-Oy-7KC"/>
-                            <constraint firstItem="BOG-Pd-i1C" firstAttribute="top" secondItem="XbI-Jq-ckB" secondAttribute="bottom" constant="45" id="LGB-Ce-ZmG"/>
                             <constraint firstItem="hFp-K8-NX8" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="VkU-gq-liG"/>
-                            <constraint firstItem="BOG-Pd-i1C" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="30" id="YUR-9O-yhL"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="OYd-Xl-gpc" secondAttribute="trailing" constant="15" id="ctW-te-Ohp"/>
                             <constraint firstItem="OYd-Xl-gpc" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="60" id="dRN-Xf-gbM"/>
                             <constraint firstItem="uFa-zX-3Dg" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="30" id="eb0-7o-vLX"/>
                             <constraint firstItem="EAQ-D1-Ks1" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="elN-fN-Alq"/>
+                            <constraint firstItem="BOG-Pd-i1C" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="30" id="f9q-fd-asr"/>
                             <constraint firstItem="hFp-K8-NX8" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="20" id="fb3-8R-ScL"/>
+                            <constraint firstItem="BOG-Pd-i1C" firstAttribute="top" secondItem="XbI-Jq-ckB" secondAttribute="bottom" constant="45" id="iPN-J8-Pzc"/>
                             <constraint firstItem="Dq1-TI-bSJ" firstAttribute="top" secondItem="OYd-Xl-gpc" secondAttribute="bottom" constant="20" id="ieH-Th-dw6"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="Dq1-TI-bSJ" secondAttribute="trailing" constant="15" id="kfA-h6-9O3"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="ayZ-kM-GJw" secondAttribute="bottom" constant="20" id="lQe-y0-E1e"/>
@@ -89,7 +93,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Tag" image="first" id="acW-dT-cKf"/>
                     <connections>
-                        <outlet property="addressLabel" destination="BOG-Pd-i1C" id="xrB-o5-fea"/>
+                        <outlet property="addressLabel" destination="BOG-Pd-i1C" id="bOO-b7-aCb"/>
                         <outlet property="getButton" destination="ayZ-kM-GJw" id="QgA-p3-fXU"/>
                         <outlet property="latitudeLabel" destination="OYd-Xl-gpc" id="mNx-pc-Tjw"/>
                         <outlet property="longitudeLabel" destination="Dq1-TI-bSJ" id="nT2-F6-V9E"/>
