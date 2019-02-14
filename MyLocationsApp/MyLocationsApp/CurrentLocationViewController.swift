@@ -9,17 +9,20 @@
 import UIKit
 import CoreLocation
 
-class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate {
+class CurrentLocationViewController: UIViewController,
+CLLocationManagerDelegate {
 
     //Variables
     let locationManager = CLLocationManager()
     
+    var location: CLLocation?
     
     
     //Loaad
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        updateLabels()
     }
 
     //Outlets
@@ -32,8 +35,18 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
     
     //Actions
     @IBAction func getLocation() {
+        let authStatus = CLLocationManager.authorizationStatus()
+        if authStatus == .notDetermined {
+            locationManager.requestWhenInUseAuthorization()
+            return
+        }
+        if authStatus == .denied || authStatus == .restricted {
+            showLocationServicesDeniedAlert()
+            return
+        }
         locationManager.delegate = self
-        locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+        locationManager.desiredAccuracy =
+        kCLLocationAccuracyNearestTenMeters
         locationManager.startUpdatingLocation()
     }
     
@@ -47,6 +60,42 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
                          didUpdateLocations locations: [CLLocation]) {
         let newLocation = locations.last!
         print("didUpdateLocations \(newLocation)")
+        
+        location = newLocation
+        updateLabels()
+    }
+    
+    //Helper Methods
+    func showLocationServicesDeniedAlert() {
+        let alert = UIAlertController(
+            title: "Location Services Disabled",
+            message: "Please enable location services for this app in Settings.",
+            preferredStyle: .alert)
+        
+        let okAction = UIAlertAction(title: "OK", style: .default,
+                                     handler: nil)
+        alert.addAction(okAction)
+        
+        present(alert, animated: true, completion: nil)
+    }
+    
+    
+    //////
+    func updateLabels() {
+        if let location = location {
+            latitudeLabel.text = String(format: "%.8f",
+                                        location.coordinate.latitude)
+            longitudeLabel.text = String(format: "%.8f",
+                                         location.coordinate.longitude)
+            tagButton.isHidden = false
+            messageLabel.text = ""
+        } else {
+            latitudeLabel.text = ""
+            longitudeLabel.text = ""
+            addressLabel.text = ""
+            tagButton.isHidden = true
+            messageLabel.text = "Tap 'Get My Location' to Start"
+        }
     }
 }
 
