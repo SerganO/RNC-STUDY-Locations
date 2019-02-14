@@ -32,8 +32,28 @@ CLLocationManagerDelegate {
         // Do any additional setup after loading the view, typically from a nib.
         updateLabels()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = true
+    }
 
-    //Outlets
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = false
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue,
+                             sender: Any?) {
+        if segue.identifier == "TagLocation" {
+            let controller = segue.destination
+                as! LocationDetailsViewController
+            controller.coordinate = location!.coordinate
+            controller.placemark = placemark
+        }
+    }
+
+    
     @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var latitudeLabel: UILabel!
     @IBOutlet weak var longitudeLabel: UILabel!
