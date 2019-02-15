@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreLocation
+import CoreData
 
 class CurrentLocationViewController: UIViewController,
 CLLocationManagerDelegate {
@@ -24,6 +25,7 @@ CLLocationManagerDelegate {
     var lastLocationError:Error?
     var timer: Timer?
     
+    var managedObjectContext: NSManagedObjectContext!
     
     //Loaad
     override func viewDidLoad()
@@ -50,6 +52,7 @@ CLLocationManagerDelegate {
                 as! LocationDetailsViewController
             controller.coordinate = location!.coordinate
             controller.placemark = placemark
+            controller.managedObjectContext = managedObjectContext
         }
     }
 
@@ -145,11 +148,11 @@ CLLocationManagerDelegate {
                 print("*** Going to geocode")
                 
                 performingReverseGeocoding = true
-                print("Lilili")
+                //print("Lilili")
                 geocoder.reverseGeocodeLocation(newLocation,
                                                 completionHandler: {
                                                     placemarks, error in
-                                                    print("Lololo")
+                                                   // print("Lololo")
                                                     self.lastGeocodingError = error
                                                     if error == nil, let p = placemarks, !p.isEmpty {
                                                         self.placemark = p.last!
@@ -159,7 +162,7 @@ CLLocationManagerDelegate {
                                                     self.performingReverseGeocoding = false
                                                     self.updateLabels()
                 })
-                print("Lalala")
+               // print("Lalala")
             }
             } else if distance < 1 {
             let timeInterval = newLocation.timestamp.timeIntervalSince(
