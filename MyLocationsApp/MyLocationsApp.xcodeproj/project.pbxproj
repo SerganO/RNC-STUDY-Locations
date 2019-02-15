@@ -10,6 +10,7 @@
 		EC14813E221592BF00920094 /* LocationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC14813D221592BF00920094 /* LocationDetailsViewController.swift */; };
 		EC14814022159E2700920094 /* CategoryPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC14813F22159E2700920094 /* CategoryPickerViewController.swift */; };
 		EC5807092216B6BB009D1F75 /* HudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5807082216B6BB009D1F75 /* HudView.swift */; };
+		EC58070B2216C876009D1F75 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC58070A2216C876009D1F75 /* Functions.swift */; };
 		EC603A7E22144877000A306F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC603A7D22144877000A306F /* AppDelegate.swift */; };
 		EC603A8022144877000A306F /* CurrentLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC603A7F22144877000A306F /* CurrentLocationViewController.swift */; };
 		EC603A8222144877000A306F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC603A8122144877000A306F /* SecondViewController.swift */; };
@@ -41,6 +42,7 @@
 		EC14813D221592BF00920094 /* LocationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailsViewController.swift; sourceTree = "<group>"; };
 		EC14813F22159E2700920094 /* CategoryPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPickerViewController.swift; sourceTree = "<group>"; };
 		EC5807082216B6BB009D1F75 /* HudView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HudView.swift; sourceTree = "<group>"; };
+		EC58070A2216C876009D1F75 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		EC603A7A22144877000A306F /* MyLocationsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLocationsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC603A7D22144877000A306F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC603A7F22144877000A306F /* CurrentLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocationViewController.swift; sourceTree = "<group>"; };
@@ -106,15 +108,16 @@
 			isa = PBXGroup;
 			children = (
 				EC603A7D22144877000A306F /* AppDelegate.swift */,
-				EC603A7F22144877000A306F /* CurrentLocationViewController.swift */,
-				EC603A8122144877000A306F /* SecondViewController.swift */,
-				EC603A8322144877000A306F /* Main.storyboard */,
-				EC14813D221592BF00920094 /* LocationDetailsViewController.swift */,
 				EC603A8622144878000A306F /* Assets.xcassets */,
-				EC603A8822144878000A306F /* LaunchScreen.storyboard */,
-				EC603A8B22144878000A306F /* Info.plist */,
 				EC14813F22159E2700920094 /* CategoryPickerViewController.swift */,
+				EC603A7F22144877000A306F /* CurrentLocationViewController.swift */,
+				EC58070A2216C876009D1F75 /* Functions.swift */,
 				EC5807082216B6BB009D1F75 /* HudView.swift */,
+				EC603A8B22144878000A306F /* Info.plist */,
+				EC603A8822144878000A306F /* LaunchScreen.storyboard */,
+				EC14813D221592BF00920094 /* LocationDetailsViewController.swift */,
+				EC603A8322144877000A306F /* Main.storyboard */,
+				EC603A8122144877000A306F /* SecondViewController.swift */,
 			);
 			path = MyLocationsApp;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 				EC14813E221592BF00920094 /* LocationDetailsViewController.swift in Sources */,
 				EC603A8222144877000A306F /* SecondViewController.swift in Sources */,
 				EC5807092216B6BB009D1F75 /* HudView.swift in Sources */,
+				EC58070B2216C876009D1F75 /* Functions.swift in Sources */,
 				EC603A7E22144877000A306F /* AppDelegate.swift in Sources */,
 				EC14814022159E2700920094 /* CategoryPickerViewController.swift in Sources */,
 				EC603A8022144877000A306F /* CurrentLocationViewController.swift in Sources */,
