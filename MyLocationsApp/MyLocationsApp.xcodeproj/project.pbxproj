@@ -95,8 +95,6 @@
 		EC603A7122144877000A306F = {
 			isa = PBXGroup;
 			children = (
-				EC5807172216E68B009D1F75 /* Location+CoreDataClass.swift */,
-				EC5807182216E68B009D1F75 /* Location+CoreDataProperties.swift */,
 				EC603A7C22144877000A306F /* MyLocationsApp */,
 				EC603A9322144878000A306F /* MyLocationsAppTests */,
 				EC603A9E22144878000A306F /* MyLocationsAppUITests */,
@@ -117,19 +115,16 @@
 		EC603A7C22144877000A306F /* MyLocationsApp */ = {
 			isa = PBXGroup;
 			children = (
+				EC93A9A2221AC11C00A4C369 /* Extensions */,
+				EC93A9A1221AC0F900A4C369 /* Models */,
+				EC93A9A0221AC0EF00A4C369 /* Views */,
+				EC93A99F221AC0DA00A4C369 /* View Controllers */,
 				EC603A7D22144877000A306F /* AppDelegate.swift */,
 				EC603A8622144878000A306F /* Assets.xcassets */,
-				EC14813F22159E2700920094 /* CategoryPickerViewController.swift */,
-				EC603A7F22144877000A306F /* CurrentLocationViewController.swift */,
-				EC58070A2216C876009D1F75 /* Functions.swift */,
-				EC5807082216B6BB009D1F75 /* HudView.swift */,
 				EC603A8B22144878000A306F /* Info.plist */,
 				EC603A8822144878000A306F /* LaunchScreen.storyboard */,
-				EC14813D221592BF00920094 /* LocationDetailsViewController.swift */,
 				EC603A8322144877000A306F /* Main.storyboard */,
-				EC603A8122144877000A306F /* SecondViewController.swift */,
 				EC58070C2216CC06009D1F75 /* DataModel.xcdatamodeld */,
-				EC58071B2216F1FB009D1F75 /* LocationsViewController.swift */,
 			);
 			path = MyLocationsApp;
 			sourceTree = "<group>";
@@ -150,6 +145,43 @@
 				EC603AA122144878000A306F /* Info.plist */,
 			);
 			path = MyLocationsAppUITests;
+			sourceTree = "<group>";
+		};
+		EC93A99F221AC0DA00A4C369 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EC58071B2216F1FB009D1F75 /* LocationsViewController.swift */,
+				EC14813F22159E2700920094 /* CategoryPickerViewController.swift */,
+				EC603A7F22144877000A306F /* CurrentLocationViewController.swift */,
+				EC14813D221592BF00920094 /* LocationDetailsViewController.swift */,
+				EC603A8122144877000A306F /* SecondViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		EC93A9A0221AC0EF00A4C369 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EC5807082216B6BB009D1F75 /* HudView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EC93A9A1221AC0F900A4C369 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EC5807172216E68B009D1F75 /* Location+CoreDataClass.swift */,
+				EC5807182216E68B009D1F75 /* Location+CoreDataProperties.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EC93A9A2221AC11C00A4C369 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EC58070A2216C876009D1F75 /* Functions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

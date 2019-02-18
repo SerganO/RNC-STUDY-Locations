@@ -107,7 +107,6 @@
         <!--Locations-->
         <scene sceneID="xHE-Ru-wWa">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="K3d-PY-2Y8" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="ojQ-tZ-wqV" customClass="LocationsViewController" customModule="MyLocationsApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="33g-xi-Laa">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -154,6 +153,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Locations" id="uZa-as-5fT"/>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K3d-PY-2Y8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1779.375" y="373.94366197183098"/>
         </scene>

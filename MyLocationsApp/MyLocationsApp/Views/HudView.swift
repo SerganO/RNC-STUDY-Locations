@@ -34,8 +34,8 @@ class HudView: UIView
         let boxHeight: CGFloat = 96
         
         let boxRect = CGRect(
-            x: round((bounds.size.width - boxWidth) / 2),
-            y: round((bounds.size.height - boxHeight) / 2),
+            x: round((frame.size.width - boxWidth) / 2),
+            y: round((frame.size.height - boxHeight) / 2),
             width: boxWidth,
             height: boxHeight
         )
@@ -46,14 +46,13 @@ class HudView: UIView
         
         if let image = UIImage(named: "Checkmark")
         {
-           
-        let imagePoint = CGPoint(
-           
-            //x: center.x - round(image.size.width / 2),
-            //y: center.y - round(image.size.height / 2) - boxHeight / 8)
-            x: round((bounds.size.width - round(image.size.width)) / 2 ),///////////
-            y: round((bounds.size.height - round(image.size.height)) / 2 - boxHeight / 8))//////////
-        image.draw(at: imagePoint)
+            let imagePoint = CGPoint(
+            
+                x: (rect.size.width / 2) - round(image.size.width / 2),
+                y: (rect.size.height / 2) - round(image.size.height / 2) - (boxHeight / 8))
+//                x: round((bounds.size.width - round(image.size.width)) / 2 ),///////////
+//                y: round((bounds.size.height - round(image.size.height)) / 2 - boxHeight / 8))//////////
+            image.draw(at: imagePoint)
         }
         
         
@@ -64,8 +63,8 @@ class HudView: UIView
         let textSize = text.size(withAttributes: attribs)
         
         let textPoint = CGPoint(
-            x: center.x - round(textSize.width / 2),
-            y: center.y - round(textSize.height / 2) + boxHeight /*/ 4*/)
+            x: (rect.size.width / 2) - round(textSize.width / 2),
+            y: (rect.size.height / 2) - round(textSize.height / 2) + boxHeight / 4 /*/ 4*/)
         
         text.draw(at: textPoint, withAttributes: attribs)
         

@@ -119,8 +119,8 @@ class LocationDetailsViewController: UITableViewController {
         location.placemark = placemark
         do{
             
-        try managedObjectContext.save()
-        afterDelay(0.6)
+            try managedObjectContext.save()
+            afterDelay(0.6)
             {
                 hudView.hide()
                 self.navigationController?.popViewController(animated: true)
