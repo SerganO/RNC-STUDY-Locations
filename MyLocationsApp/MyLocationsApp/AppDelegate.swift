@@ -17,7 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let container = NSPersistentContainer(name: "DataModel")
         container.loadPersistentStores(completionHandler:{
             storeDescription, error in
-            if let error = error {
+            if let error = error
+            {
                 fatalError("Could load data store: \(error)")
             }
         })
@@ -36,17 +37,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         if let tabViewControllers = tabController.viewControllers
         {
-            var navController = tabViewControllers[0]
-                as! UINavigationController
-            let controller1 = navController.viewControllers.first
-                as! CurrentLocationViewController
+            var navController = tabViewControllers[0] as! UINavigationController
+            let controller1 = navController.viewControllers.first as! CurrentLocationViewController
             controller1.managedObjectContext = managedObjectContext
             // Second tab
-            navController = tabViewControllers[1]
-                as! UINavigationController
-            let controller2 = navController.viewControllers.first
-                as! LocationsViewController
-            controller2.managedObjectContext = managedObjectContext  
+            navController = tabViewControllers[1] as! UINavigationController
+            let controller2 = navController.viewControllers.first as! LocationsViewController
+            controller2.managedObjectContext = managedObjectContext
+            let _ = controller2.view
         }
         print(applicationDocumentsDirectory)
         listenForFatalCoreDataNotifications()
@@ -94,19 +92,17 @@ Press OK to terminate the app. Sorry for the inconvenience.
                     preferredStyle: .alert)
                 
                 // 4
-                let action = UIAlertAction(title: "OK",
-                                           style: .default) { _ in
-                                            let exception = NSException(
-                                                name: NSExceptionName.internalInconsistencyException,
+                let action = UIAlertAction(title: "OK",style: .default)
+                { _ in
+                    let exception = NSException(name:NSExceptionName.internalInconsistencyException,
                                                 reason: "Fatal Core Data error", userInfo: nil)
-                                            exception.raise()
+                    exception.raise()
                 }
                 alert.addAction(action)
                 
                 // 5
                 let tabController = self.window!.rootViewController!
-                tabController.present(alert, animated: true,
-                                      completion: nil)
+                tabController.present(alert, animated: true,completion: nil)
         })
     }
     
