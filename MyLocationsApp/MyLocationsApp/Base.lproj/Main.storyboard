@@ -113,7 +113,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LocationCell" rowHeight="58" id="fbN-Vu-lxq">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LocationCell" rowHeight="58" id="fbN-Vu-lxq" customClass="LocationCell" customModule="MyLocationsApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="320" height="58"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fbN-Vu-lxq" id="J8l-KL-l50">
@@ -144,6 +144,11 @@
                                         <constraint firstItem="qBi-a9-qtA" firstAttribute="top" secondItem="pca-F0-vCz" secondAttribute="bottom" constant="8" id="xFc-k3-IlX"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="addressLabel" destination="qBi-a9-qtA" id="ryl-6B-1Uo"/>
+                                    <outlet property="descriptionLabel" destination="pca-F0-vCz" id="lqT-5f-gTL"/>
+                                    <segue destination="Q5H-zE-mcE" kind="show" identifier="EditLocation" id="OCe-Us-VK0"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -478,4 +483,7 @@
     <resources>
         <image name="first" width="30" height="30"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="OCe-Us-VK0"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -10,7 +10,8 @@ import UIKit
 import CoreData
 import CoreLocation
 
-class LocationsViewController: UITableViewController {
+class LocationsViewController: UITableViewController
+{
     var managedObjectContext: NSManagedObjectContext!
     var locations = [Location]()
     
@@ -27,50 +28,51 @@ class LocationsViewController: UITableViewController {
         
         let sortDescriptor = NSSortDescriptor(key: "date", ascending: true)
         fetchRequest.sortDescriptors = [sortDescriptor]
-        do{
-            locations = try
-                managedObjectContext.fetch(fetchRequest)}
-        catch{
+        do
+        {
+            locations = try managedObjectContext.fetch(fetchRequest)}
+        catch
+        {
             fatalCoreDataError(error)
         }
     }
     
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        if segue.identifier == "EditLocation"
+        {
+            let controller = segue.destination as! LocationDetailsViewController
+            controller.managedObjectContext = managedObjectContext
+            
+            if let indexPath = tableView.indexPath(for: sender as! UITableViewCell)
+            {
+                let location = locations[indexPath.row]
+                controller.locationToEdit = location
+            }
+        }
+    }
     
-    // MARK: - Table View Delegates
+    
+    
+    
+    
+    //Table View Delegates
     override func tableView(_ tableView: UITableView,
-                            numberOfRowsInSection section: Int) -> Int {
+                            numberOfRowsInSection section: Int) -> Int
+    {
         return locations.count
     }
     
-    override func tableView(_ tableView: UITableView,
-                               cellForRowAt indexPath: IndexPath) ->
-        UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
             let cell = tableView.dequeueReusableCell(
                 withIdentifier: "LocationCell",
-                for: indexPath)
+                for: indexPath) as! LocationCell
             
             let location = locations[indexPath.row]
+            cell.configure(for: location)
             
-            let descriptionLabel = cell.viewWithTag(100) as! UILabel
-            descriptionLabel.text = location.locationDescription
-            
-            let addressLabel = cell.viewWithTag(101) as! UILabel
-            if let placemark = location.placemark {
-                var text = ""
-                if let s = placemark.subThoroughfare {
-                    text += s + " "
-                }
-                if let s = placemark.thoroughfare {
-                    text += s + ", "
-                }
-                if let s = placemark.locality {
-                    text += s
-                    }
-                addressLabel.text = text
-            } else {
-                addressLabel.text = ""
-            }
             return cell
     }
 }

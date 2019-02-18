@@ -23,6 +23,7 @@
 		EC603A8A22144878000A306F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC603A8822144878000A306F /* LaunchScreen.storyboard */; };
 		EC603A9522144878000A306F /* MyLocationsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC603A9422144878000A306F /* MyLocationsAppTests.swift */; };
 		EC603AA022144878000A306F /* MyLocationsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC603A9F22144878000A306F /* MyLocationsAppUITests.swift */; };
+		EC93A9E2221AD95D00A4C369 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC93A9E1221AD95D00A4C369 /* LocationCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		EC603A9B22144878000A306F /* MyLocationsAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyLocationsAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC603A9F22144878000A306F /* MyLocationsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLocationsAppUITests.swift; sourceTree = "<group>"; };
 		EC603AA122144878000A306F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC93A9E1221AD95D00A4C369 /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 				EC603A8822144878000A306F /* LaunchScreen.storyboard */,
 				EC603A8322144877000A306F /* Main.storyboard */,
 				EC58070C2216CC06009D1F75 /* DataModel.xcdatamodeld */,
+				EC93A9E1221AD95D00A4C369 /* LocationCell.swift */,
 			);
 			path = MyLocationsApp;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 				EC5807092216B6BB009D1F75 /* HudView.swift in Sources */,
 				EC58071C2216F1FB009D1F75 /* LocationsViewController.swift in Sources */,
 				EC58071A2216E68B009D1F75 /* Location+CoreDataProperties.swift in Sources */,
+				EC93A9E2221AD95D00A4C369 /* LocationCell.swift in Sources */,
 				EC58070B2216C876009D1F75 /* Functions.swift in Sources */,
 				EC603A7E22144877000A306F /* AppDelegate.swift in Sources */,
 				EC5807192216E68B009D1F75 /* Location+CoreDataClass.swift in Sources */,

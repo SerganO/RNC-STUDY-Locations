@@ -8,7 +8,8 @@
 
 import UIKit
 
-class CategoryPickerViewController: UITableViewController {
+class CategoryPickerViewController: UITableViewController
+{
     var selectedCategoryName = ""
     
     let categories = [
@@ -26,25 +27,28 @@ class CategoryPickerViewController: UITableViewController {
     
     var selectedIndexPath = IndexPath()
     
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         
-        for i in 0..<categories.count {
-            if categories[i] == selectedCategoryName {
+        for i in 0..<categories.count
+        {
+            if categories[i] == selectedCategoryName
+            {
                 selectedIndexPath = IndexPath(row: i, section: 0)
                 break
             }
         }
     }
     // MARK:- Table View Delegates
-    override func tableView(_ tableView: UITableView,
-                            numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
         return categories.count
     }
     
     override func tableView(_ tableView: UITableView,
-                            cellForRowAt indexPath: IndexPath) ->
-        UITableViewCell {
+                            cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
             let cell = tableView.dequeueReusableCell(
                 withIdentifier: "Cell",
                 for: indexPath)
@@ -52,21 +56,26 @@ class CategoryPickerViewController: UITableViewController {
             let categoryName = categories[indexPath.row]
             cell.textLabel!.text = categoryName
             
-            if categoryName == selectedCategoryName {
+            if categoryName == selectedCategoryName
+            {
                 cell.accessoryType = .checkmark
-            } else {
+            }
+            else
+            {
                 cell.accessoryType = .none
             }
             return cell
     }
-    override func tableView(_ tableView: UITableView,
-                               didSelectRowAt indexPath: IndexPath) {
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
         if indexPath.row != selectedIndexPath.row {
-            if let newCell = tableView.cellForRow(at: indexPath) {
+            if let newCell = tableView.cellForRow(at: indexPath)
+            {
                 newCell.accessoryType = .checkmark
             }
-            if let oldCell = tableView.cellForRow(
-                at: selectedIndexPath) {
+            if let oldCell = tableView.cellForRow(at: selectedIndexPath)
+            {
                 oldCell.accessoryType = .none
             }
             selectedIndexPath = indexPath
@@ -76,9 +85,11 @@ class CategoryPickerViewController: UITableViewController {
     // MARK:- Navigation
     override func prepare(for segue: UIStoryboardSegue,
                           sender: Any?) {
-        if segue.identifier == "PickedCategory" {
+        if segue.identifier == "PickedCategory"
+        {
             let cell = sender as! UITableViewCell
-            if let indexPath = tableView.indexPath(for: cell) {
+            if let indexPath = tableView.indexPath(for: cell)
+            {
                 selectedCategoryName = categories[indexPath.row]
             }
         }

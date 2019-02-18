@@ -47,11 +47,8 @@ class HudView: UIView
         if let image = UIImage(named: "Checkmark")
         {
             let imagePoint = CGPoint(
-            
                 x: (rect.size.width / 2) - round(image.size.width / 2),
-                y: (rect.size.height / 2) - round(image.size.height / 2) - (boxHeight / 8))
-//                x: round((bounds.size.width - round(image.size.width)) / 2 ),///////////
-//                y: round((bounds.size.height - round(image.size.height)) / 2 - boxHeight / 8))//////////
+                y: (rect.size.height / 2) - round(image.size.height / 2) - (boxHeight / 8) )
             image.draw(at: imagePoint)
         }
         
@@ -64,14 +61,16 @@ class HudView: UIView
         
         let textPoint = CGPoint(
             x: (rect.size.width / 2) - round(textSize.width / 2),
-            y: (rect.size.height / 2) - round(textSize.height / 2) + boxHeight / 4 /*/ 4*/)
+            y: (rect.size.height / 2) - round(textSize.height / 2) + boxHeight / 4 )
         
         text.draw(at: textPoint, withAttributes: attribs)
         
     }
     // MARK:- Public methods
-    func show(animated: Bool) {
-        if animated {
+    func show(animated: Bool)
+    {
+        if animated
+        {
           
             alpha = 0
             transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
