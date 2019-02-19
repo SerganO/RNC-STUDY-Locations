@@ -23,7 +23,7 @@ class LocationsViewController: UITableViewController
         let sort2 = NSSortDescriptor(key: "date", ascending: true)
         fetchRequest.sortDescriptors = [sort1, sort2]
         
-        fetchRequest.fetchOffset = 20
+        fetchRequest.fetchBatchSize = 20
         
         let fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: self.managedObjectContext, sectionNameKeyPath: "category", cacheName: "Locations")
         

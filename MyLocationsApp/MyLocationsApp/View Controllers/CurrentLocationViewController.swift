@@ -240,8 +240,7 @@ class CurrentLocationViewController: UIViewController,CLLocationManagerDelegate
             }
         }
     }
-    
-    //////
+ 
     
     func configureGetButton()
     {

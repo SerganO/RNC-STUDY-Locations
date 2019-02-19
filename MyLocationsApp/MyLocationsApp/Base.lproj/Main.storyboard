@@ -105,7 +105,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1618" y="-846"/>
+            <point key="canvasLocation" x="1697" y="-846"/>
         </scene>
         <!--Locations-->
         <scene sceneID="xHE-Ru-wWa">
@@ -405,7 +405,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J6w-ib-xas" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2351" y="-846"/>
+            <point key="canvasLocation" x="2466" y="-846"/>
         </scene>
         <!--Category Picker View Controller-->
         <scene sceneID="NyN-D5-A31">
@@ -446,7 +446,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HhH-TI-NLN" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="fm8-y2-E9T" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3075" y="-846"/>
+            <point key="canvasLocation" x="3219" y="-846"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -502,11 +502,12 @@
                     </navigationItem>
                     <connections>
                         <outlet property="mapView" destination="Lwe-p0-SjJ" id="WS7-6i-rzZ"/>
+                        <segue destination="Q5H-zE-mcE" kind="show" identifier="EditLocation" id="1f9-nt-j3d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="70m-eh-Wpi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1751.25" y="538.73239436619724"/>
+            <point key="canvasLocation" x="1697" y="549"/>
         </scene>
         <!--Tag-->
         <scene sceneID="paW-y1-rh9">
@@ -525,7 +526,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O5N-wQ-8bW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="769" y="-846"/>
+            <point key="canvasLocation" x="949" y="-846"/>
         </scene>
         <!--Map-->
         <scene sceneID="PVV-EK-SN8">
@@ -544,13 +545,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bil-q4-q5K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="753.75" y="538.73239436619724"/>
+            <point key="canvasLocation" x="949" y="550"/>
         </scene>
     </scenes>
     <resources>
         <image name="first" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="OCe-Us-VK0"/>
+        <segue reference="1f9-nt-j3d"/>
     </inferredMetricsTieBreakers>
 </document>
