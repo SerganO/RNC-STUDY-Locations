@@ -11,6 +11,7 @@
 		EC14814022159E2700920094 /* CategoryPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC14813F22159E2700920094 /* CategoryPickerViewController.swift */; };
 		EC4DE1DA221BFFFD009D70DF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC4DE1D9221BFFFD009D70DF /* MapKit.framework */; };
 		EC4DE1DC221C00BF009D70DF /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4DE1DB221C00BF009D70DF /* MapViewController.swift */; };
+		EC4DE1DE221C45AC009D70DF /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4DE1DD221C45AC009D70DF /* UIImage+Resize.swift */; };
 		EC5807092216B6BB009D1F75 /* HudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5807082216B6BB009D1F75 /* HudView.swift */; };
 		EC58070B2216C876009D1F75 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC58070A2216C876009D1F75 /* Functions.swift */; };
 		EC58070E2216CC06009D1F75 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EC58070C2216CC06009D1F75 /* DataModel.xcdatamodeld */; };
@@ -50,6 +51,7 @@
 		EC14813F22159E2700920094 /* CategoryPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPickerViewController.swift; sourceTree = "<group>"; };
 		EC4DE1D9221BFFFD009D70DF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		EC4DE1DB221C00BF009D70DF /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		EC4DE1DD221C45AC009D70DF /* UIImage+Resize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Resize.swift"; sourceTree = "<group>"; };
 		EC5807082216B6BB009D1F75 /* HudView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HudView.swift; sourceTree = "<group>"; };
 		EC58070A2216C876009D1F75 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		EC58070D2216CC06009D1F75 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				EC58070A2216C876009D1F75 /* Functions.swift */,
+				EC4DE1DD221C45AC009D70DF /* UIImage+Resize.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 				EC58071C2216F1FB009D1F75 /* LocationsViewController.swift in Sources */,
 				EC58071A2216E68B009D1F75 /* Location+CoreDataProperties.swift in Sources */,
 				EC4DE1DC221C00BF009D70DF /* MapViewController.swift in Sources */,
+				EC4DE1DE221C45AC009D70DF /* UIImage+Resize.swift in Sources */,
 				EC93A9E2221AD95D00A4C369 /* LocationCell.swift in Sources */,
 				EC58070B2216C876009D1F75 /* Functions.swift in Sources */,
 				EC603A7E22144877000A306F /* AppDelegate.swift in Sources */,
