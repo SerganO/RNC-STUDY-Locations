@@ -65,6 +65,8 @@ class LocationCell: UITableViewCell
         }
 
         photoImageView.image = thumbnail(for: location)
+//        photoImageView.contentMode = .scaleAspectFit
+//        photoImageView.image = location.photoImage
     }
  
     func thumbnail(for location: Location) -> UIImage
