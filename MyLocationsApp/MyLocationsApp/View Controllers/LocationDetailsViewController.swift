@@ -54,39 +54,26 @@ class LocationDetailsViewController: UITableViewController
     }
     
     
-    override func viewDidLoad()
-    {
+    override func viewDidLoad() {
         super.viewDidLoad()
-        
-        if let location = locationToEdit
-        {
+        if let location = locationToEdit {
             title = "Edit Location"
         }
         
         descriptionTextView.text = descriptionText
         categoryLabel.text = categoryName
         
-        latitudeLabel.text = String(format: "%.8f",
-                                    coordinate.latitude)
-        longitudeLabel.text = String(format: "%.8f",
-                                     coordinate.longitude)
+        latitudeLabel.text = String(format: "%.8f", coordinate.latitude)
+        longitudeLabel.text = String(format: "%.8f", coordinate.longitude)
         
-        if let placemark = placemark
-        {
+        if let placemark = placemark {
             addressLabel.text = string(from: placemark)
-        }
-        else
-        {
+        } else {
             addressLabel.text = "No Address Found"
         }
-        
         dateLabel.text = format(date: date)
-        
         // Hide keyboard
-        let gestureRecognizer = UITapGestureRecognizer(target: self,
-                                                       action: #selector(hideKeyboard))
-        
-        
+        let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
         gestureRecognizer.cancelsTouchesInView = false
         tableView.addGestureRecognizer(gestureRecognizer)
     }
