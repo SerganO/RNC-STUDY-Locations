@@ -21,11 +21,11 @@
 		EC58C19B221D521800B8F435 /* String+AddText.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC58C19A221D521800B8F435 /* String+AddText.swift */; };
 		EC58C19D221D59E800B8F435 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC58C19C221D59E800B8F435 /* MyTabBarController.swift */; };
 		EC58C19F221D5B9E00B8F435 /* MyImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC58C19E221D5B9E00B8F435 /* MyImagePickerController.swift */; };
+		EC58C1A1221D722400B8F435 /* Sound in Resources */ = {isa = PBXBuildFile; fileRef = EC58C1A0221D722400B8F435 /* Sound */; };
 		EC603A7E22144877000A306F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC603A7D22144877000A306F /* AppDelegate.swift */; };
 		EC603A8022144877000A306F /* CurrentLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC603A7F22144877000A306F /* CurrentLocationViewController.swift */; };
 		EC603A8522144877000A306F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC603A8322144877000A306F /* Main.storyboard */; };
 		EC603A8722144878000A306F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC603A8622144878000A306F /* Assets.xcassets */; };
-		EC603A8A22144878000A306F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC603A8822144878000A306F /* LaunchScreen.storyboard */; };
 		EC603A9522144878000A306F /* MyLocationsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC603A9422144878000A306F /* MyLocationsAppTests.swift */; };
 		EC603AA022144878000A306F /* MyLocationsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC603A9F22144878000A306F /* MyLocationsAppUITests.swift */; };
 		EC93A9E2221AD95D00A4C369 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC93A9E1221AD95D00A4C369 /* LocationCell.swift */; };
@@ -63,12 +63,12 @@
 		EC58C19A221D521800B8F435 /* String+AddText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+AddText.swift"; sourceTree = "<group>"; };
 		EC58C19C221D59E800B8F435 /* MyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
 		EC58C19E221D5B9E00B8F435 /* MyImagePickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyImagePickerController.swift; sourceTree = "<group>"; };
+		EC58C1A0221D722400B8F435 /* Sound */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sound; sourceTree = "<group>"; };
 		EC603A7A22144877000A306F /* MyLocationsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLocationsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC603A7D22144877000A306F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC603A7F22144877000A306F /* CurrentLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocationViewController.swift; sourceTree = "<group>"; };
 		EC603A8422144877000A306F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC603A8622144878000A306F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EC603A8922144878000A306F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC603A8B22144878000A306F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC603A9022144878000A306F /* MyLocationsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyLocationsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC603A9422144878000A306F /* MyLocationsAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLocationsAppTests.swift; sourceTree = "<group>"; };
@@ -137,16 +137,16 @@
 		EC603A7C22144877000A306F /* MyLocationsApp */ = {
 			isa = PBXGroup;
 			children = (
-				EC93A9A2221AC11C00A4C369 /* Extensions */,
-				EC93A9A1221AC0F900A4C369 /* Models */,
-				EC93A9A0221AC0EF00A4C369 /* Views */,
-				EC93A99F221AC0DA00A4C369 /* View Controllers */,
 				EC603A7D22144877000A306F /* AppDelegate.swift */,
 				EC603A8622144878000A306F /* Assets.xcassets */,
-				EC603A8B22144878000A306F /* Info.plist */,
-				EC603A8822144878000A306F /* LaunchScreen.storyboard */,
-				EC603A8322144877000A306F /* Main.storyboard */,
 				EC58070C2216CC06009D1F75 /* DataModel.xcdatamodeld */,
+				EC93A9A2221AC11C00A4C369 /* Extensions */,
+				EC603A8B22144878000A306F /* Info.plist */,
+				EC603A8322144877000A306F /* Main.storyboard */,
+				EC93A9A1221AC0F900A4C369 /* Models */,
+				EC58C1A0221D722400B8F435 /* Sound */,
+				EC93A99F221AC0DA00A4C369 /* View Controllers */,
+				EC93A9A0221AC0EF00A4C369 /* Views */,
 			);
 			path = MyLocationsApp;
 			sourceTree = "<group>";
@@ -320,8 +320,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC603A8A22144878000A306F /* LaunchScreen.storyboard in Resources */,
 				EC603A8722144878000A306F /* Assets.xcassets in Resources */,
+				EC58C1A1221D722400B8F435 /* Sound in Resources */,
 				EC603A8522144877000A306F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,14 +404,6 @@
 				EC603A8422144877000A306F /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		EC603A8822144878000A306F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EC603A8922144878000A306F /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -537,6 +529,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MyLocationsApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -554,6 +547,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MyLocationsApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
