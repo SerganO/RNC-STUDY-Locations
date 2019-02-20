@@ -33,6 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        customizaAppearance()
         let tabController = window!.rootViewController as! UITabBarController
         
         if let tabViewControllers = tabController.viewControllers
@@ -110,6 +111,17 @@ Press OK to terminate the app. Sorry for the inconvenience.
                 let tabController = self.window!.rootViewController!
                 tabController.present(alert, animated: true,completion: nil)
         })
+    }
+    
+    
+    func customizaAppearance()
+    {
+        UINavigationBar.appearance().barTintColor = UIColor.black
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        UITabBar.appearance().barTintColor = UIColor.black
+        
+        let tintColor = UIColor(red:255/255.0,green:238/255.0,blue:136/255.0,alpha:1)
+        UITabBar.appearance().tintColor = tintColor
     }
     
 }

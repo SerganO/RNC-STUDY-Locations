@@ -138,7 +138,7 @@ extension MapViewController: MKMapViewDelegate
         if annotationView == nil
         {
             let pinView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
-            
+            pinView.tintColor = UIColor(white: 0.0, alpha: 0.5)
             pinView.isEnabled = true
             pinView.canShowCallout = true
             pinView.animatesDrop = false
