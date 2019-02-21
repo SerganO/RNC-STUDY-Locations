@@ -84,7 +84,7 @@ class CurrentLocationViewController: UIViewController,CLLocationManagerDelegate,
         logoMover.toValue = NSValue(cgPoint: CGPoint(x: -centerX, y: logoButton.center.y))
         logoMover.timingFunction = CAMediaTimingFunction( name: CAMediaTimingFunctionName.easeIn)
         logoButton.layer.add(logoMover, forKey: "logoMover")
-        
+
         let logoRotator = CABasicAnimation(keyPath: "transform.rotation.z")
         logoRotator.isRemovedOnCompletion = false
         logoRotator.fillMode = CAMediaTimingFillMode.forwards
@@ -92,7 +92,6 @@ class CurrentLocationViewController: UIViewController,CLLocationManagerDelegate,
         logoRotator.fromValue = 0.0
         logoRotator.toValue = -2 * Double.pi
         logoRotator.timingFunction = CAMediaTimingFunction( name: CAMediaTimingFunctionName.easeIn)
-        
         logoButton.layer.add(logoRotator, forKey: "logoRotator")
     }
     
@@ -318,7 +317,7 @@ class CurrentLocationViewController: UIViewController,CLLocationManagerDelegate,
             kCLLocationAccuracyNearestTenMeters
             locationManager.startUpdatingLocation()
             updatingLocation = true
-            timer = Timer.scheduledTimer(timeInterval: 60, target: self,
+            timer = Timer.scheduledTimer(timeInterval: 10, target: self,
                 selector: #selector(didTimeOut), userInfo: nil,
                 repeats: false)
         }
@@ -445,6 +444,7 @@ class CurrentLocationViewController: UIViewController,CLLocationManagerDelegate,
                 statusMessage = ""
                 showLogoView()
             }
+            
             messageLabel.text = statusMessage
             latitudeTextLabel.isHidden = true
             longitudeTextLabel.isHidden = true

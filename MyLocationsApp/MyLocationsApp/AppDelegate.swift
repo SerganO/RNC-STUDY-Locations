@@ -89,10 +89,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             using: { notification in
                 // 2
                 let message = """
-There was a fatal error in the app and it cannot continue.
+                There was a fatal error in the app and it cannot continue.
 
-Press OK to terminate the app. Sorry for the inconvenience.
-"""
+                Press OK to terminate the app. Sorry for the inconvenience.
+                """
                 // 3
                 let alert = UIAlertController(
                     title: "Internal Error", message: message,
